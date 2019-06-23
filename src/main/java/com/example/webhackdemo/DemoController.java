@@ -25,6 +25,6 @@ public class DemoController {
     @PostMapping("/add-attendee")
     @ResponseStatus(HttpStatus.CREATED)
     public void addAttendee(@RequestBody AddAttendeeBody body) {
-        jdbcTemplate.execute("INSERT INTO attendees (name) VALUES ('"+ body.getAttendeeName() +"')");
+        jdbcTemplate.update("INSERT INTO attendees (name) VALUES (?)", body.getAttendeeName());
     }
 }

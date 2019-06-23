@@ -44,8 +44,6 @@ public class WebhackDemoApplicationTests {
 
     @Test
     public void index_shouldReturnHelloWorld() {
-
-
         RequestEntity<Void> requestEntity = RequestEntity.get(URI.create("http://localhost:" + port + "/"))
                 .build();
 
