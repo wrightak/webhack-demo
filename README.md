@@ -1,4 +1,4 @@
-##Webhack Demo
+## Webhack Demo
 
 Small Spring Boot sample. To run the tests you will need to install mysql and create a database called `webhack`.
 
